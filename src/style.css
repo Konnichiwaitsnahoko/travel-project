@@ -12,6 +12,16 @@ body {
   margin: 0 auto;
 }
 
+.section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
     url("../image/top-image.png");
@@ -58,7 +68,44 @@ header a {
   gap: 10px;
 }
 
-@media (max-width: 900px) {
+footer {
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.8),
+      rgba(39, 32, 68, 0.9)
+    ),
+    url("../image/footer-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px;
+}
+
+footer h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-right: 20px;
+}
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.8;
+  line-height: 1.5;
+  margin-right: 20px;
+}
+footer ul,
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  opacity: 0.8;
+  margin-right: 20px;
+}
+
+footer a {
+  color: var(--main-font-color);
+}
+
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
   }
