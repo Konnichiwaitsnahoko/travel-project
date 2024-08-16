@@ -43,7 +43,7 @@ section {
 }
 
 .image-responsive {
-  max-width: 100%;
+  width: 100%;
   display: block;
 }
 
@@ -165,12 +165,25 @@ main .card {
   gap: 8px;
 }
 
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+.card-header {
+  gap: 0;
+}
+
 .card-body {
   padding: 30px;
 }
 
 .card-footer {
   padding: 0;
+}
+
+.instagram-embed {
+  padding-top: 40px;
 }
 
 /* Footer */
@@ -236,5 +249,13 @@ footer a {
   }
   .grid-3-columns-1fr-2fr-1fr {
     padding: 0;
+  }
+
+  .card-header img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16/9;
   }
 }
